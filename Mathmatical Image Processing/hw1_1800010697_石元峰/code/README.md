@@ -1,8 +1,8 @@
-The program implements the ROF model and Tikhnov model .
+The program implements the total variational model .
 
 
 
-**All the boundary condition of the convolution is `'circular'`.
+**All the boundary conditions of the convolution are `'circular'`.
 **
 
 **Requirement**
@@ -14,7 +14,7 @@ MATLAB R 2016 b
 
 **Images**
 
-The images are from https://file-login.cluster-bicmr.com/d/8dc8db5528074187a921/
+The images are from https://file-login.cluster-bicmr.com/d/8dc8db5528074187a921
 **Codes**
 
 `main()` is the main routine.
@@ -31,13 +31,15 @@ function u = main(image_path, lambda_weight, kernel_rad,...
 % Date: 2019/10/12
 % image_path = the path of the test image
 % lambda_weight = the regularizer parameter
-% [kernel_size, kernel_sigma] = the choice of blurring Gaussian kernel
+% [kernel_rad, gaussian_sigma] = the choice of blurring Gaussian kernel
 % result_image_path = the path of the restored image
 %
 
 Parameter settings
 
 learning_rate, mu, tol and max_iter_time are the parameters in the Split Bregman Method
+
+1. tol = 0.0001; 2. max_iter_time = 30;
 
 barbara(0.01): 1. lambda_weight = 0.001; 2. learning_rate = 1; 3. mu = 0.1;
 
