@@ -35,26 +35,9 @@ function u = main(image_path, lambda_weight, kernel_rad,...
 % result_image_path = the path of the restored image
 %
 
-**Codes**
+Parameter settings
 
-`deblur_TV()` is the deblur function.
-
-
-PARAMETER: 
-
-```matlab
-function [u, blured_image, s] = deblur_TV(f, kernel, kernel_rad, lambda_weight)
-% This is the deblur function of the image restoration model.
-%
-
-% f = the original image
-% kernel = the blurring Gaussian kernel
-% kernel_rad = the radius of blurring Gaussian kernel
-% lambda_weight = the regularizer parameter
-%
-
-**Parameter settings**
-learning_rate and mu are the parameters in the Split Bregman Method
+learning_rate, mu, tol and max_iter_time are the parameters in the Split Bregman Method
 
 barbara(0.01): 1. lambda_weight = 0.001; 2. learning_rate = 1; 3. mu = 0.1;
 
