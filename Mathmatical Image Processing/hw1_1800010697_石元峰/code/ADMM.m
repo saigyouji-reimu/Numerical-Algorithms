@@ -1,6 +1,6 @@
 function [ u, m, u0 ] = ADMM( f,W,A,lambda,tol,max_iter_time,original )
 learning_rate = 0.8;
-mu = 0.08; 
+mu = 0.1; 
 u  = f;
 d  = zeros(size(W * u));
 b  = zeros(size(d));

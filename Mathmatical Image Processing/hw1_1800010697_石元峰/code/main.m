@@ -5,7 +5,7 @@ if nargin <1
     image_path='image/peppers256.png'; 
 end 
 if nargin <2 
-    lambda_weight = 0.002; 
+    lambda_weight = 0.0025; 
 end                           % lambda
 if nargin <3 
     kernel_rad = 7; 
@@ -14,7 +14,7 @@ if nargin <4
     gaussian_sigma = 1; 
 end                           % 高斯核方差
 if nargin <5 
-    result_image_path = 'image/peppers256_result.png'; 
+    result_image_path = 'image/peppers256.png'; 
 end                           % 输出图片名
 kernel_size = 2 * kernel_rad + 1;
 kernel = fspecial('gaussian',[kernel_size, kernel_size], gaussian_sigma);

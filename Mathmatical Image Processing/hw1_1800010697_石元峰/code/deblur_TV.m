@@ -1,9 +1,9 @@
 function [u, blured_image, s] = deblur_TV(f, kernel, kernel_rad, lambda_weight)
     addpath('./gridfunc/');
     addpath('./kernel_matrix/');
-    %load('process0.mat');                      %已存储好的卷积矩阵
+    %load('process_peppers256.mat');                      %已存储好的卷积矩阵
     [m, n] = size(f);
-    sigma_1 = 0.01;
+    sigma_1 = 0.02;
     blured_image = imfilter(f, kernel, 'circular') + sigma_1 * randn(m, n);
     % solve total variation model by ADMM
     W = [gradfuncx(m, n); gradfuncy(m, n)];

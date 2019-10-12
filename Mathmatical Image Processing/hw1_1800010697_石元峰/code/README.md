@@ -37,7 +37,7 @@ function u = main(image_path, lambda_weight, kernel_rad,...
 
 Parameter settings
 
-learning_rate, mu, tol and max_iter_time are the parameters in the Split Bregman Method
+learning_rate(line 2), mu(line 3), tol(line 1) and max_iter_time(line 1) are the parameters in the Split Bregman Method(ADMM.m)
 
 1. tol = 0.0001; 2. max_iter_time = 30;
 
