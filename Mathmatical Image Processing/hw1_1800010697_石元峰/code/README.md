@@ -34,6 +34,7 @@ function u = main(image_path, lambda_weight, kernel_rad,...
 % [kernel_size, kernel_sigma] = the choice of blurring Gaussian kernel
 % result_image_path = the path of the restored image
 %
+
 **Codes**
 
 `deblur_TV()` is the deblur function.
